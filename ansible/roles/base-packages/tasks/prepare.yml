@@ -1,0 +1,16 @@
+---
+- name: Run whoami without become
+  command: whoami
+  changed_when: false
+  become: false
+  register: whoami
+
+- name: Set a fact with the username
+  set_fact:
+    login_user: "{{ whoami.stdout }}"
+
+- name: Update apt-get repo and cache
+  apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+- name: Upgrade all apt packages
+  apt: upgrade=dist force_apt_get=yes
