@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+  # remote_user: vagrant
+
+  # vars_files:
+  #   - ../../ansible/vars/test-jenkins.yml
+
+  roles:
+    - base-packages
+    - re-tools
+
+  # tasks:
+  #   - name: Git config
+  #     shell: |
+  #       git config --global user.name "Duy Ngo"
+  #       git config --global user.email "ntduy2@gmail.com"
+  #       chmod 600 /home/vagrant/.ssh/id_rsa*
+    # - name: Set ohmyposh theme
+    #   script: scripts/ohmyposh.sh

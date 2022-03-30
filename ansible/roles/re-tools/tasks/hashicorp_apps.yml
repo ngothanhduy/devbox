@@ -1,0 +1,15 @@
+- name: Add HashiCorp’s official GPG key
+  shell: curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+
+- name: Add the official HashiCorp Linux repository
+  apt_repository:
+    repo: deb [arch=amd64] https://apt.releases.hashicorp.com bionic main
+    state: present
+
+- name: Install Packer && Terraform
+  apt:
+    name:
+      - packer
+      - terraform
+    state: present
+    update_cache: yes
