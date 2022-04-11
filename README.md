@@ -31,7 +31,9 @@ Up your sandbox and waiting:
 SSH into your sandbox and do some config:
 
 `vagrant ssh`
+
 `git config --global user.name "your_name"`
+
 `git config --global user.email "your_email@example.com"`
 
 ---
