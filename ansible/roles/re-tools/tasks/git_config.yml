@@ -28,8 +28,6 @@
 
 - name: Git config
   shell: |
-    git config --global user.name "Duy Ngo"
-    git config --global user.email "ntduy2@gmail.com"
     git config --system alias.co checkout
     git config --system core.autocrlf input
     git config --system core.editor nano
