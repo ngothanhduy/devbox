@@ -9,7 +9,7 @@
 
   roles:
     - base-packages
-    - re-tools
+    - ops
 
   # tasks:
   #   - name: Git config

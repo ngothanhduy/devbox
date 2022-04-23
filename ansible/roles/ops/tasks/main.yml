@@ -2,5 +2,3 @@
 - include: "docker.yml"
 - include: "docker_compose.yml"
 - include: "hashicorp_apps.yml"
-- include: "git_config.yml"
-# - include: "ohmyposh.yml"

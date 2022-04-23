@@ -33,6 +33,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_check_update = false
   # config.vm.synced_folder "projects", "/home/vagrant/projects"
   config.vm.synced_folder "~/OneDrive/playground/projects", "/home/vagrant/projects"
+  config.vm.synced_folder "E:/vagrant-data", "/home/vagrant/vagrant-data"
   config.vm.hostname = machine[:hostname]
   # config.ssh.username = 'root'
   # config.ssh.password = 'root'
