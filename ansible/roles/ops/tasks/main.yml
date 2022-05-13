@@ -2,3 +2,4 @@
 - include: "docker.yml"
 - include: "docker_compose.yml"
 - include: "hashicorp_apps.yml"
+- include: "aws_cli.yml"
